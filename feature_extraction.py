@@ -10,11 +10,11 @@ warnings.filterwarnings('ignore')
 
 
 
-df = pd.read_csv('/home/mariahabib/data/SVD/svd_dataset.tsv', sep='\t')
+df = pd.read_csv('svd_dataset.tsv', sep='\t')
 
 paths = df['path'].values.tolist()
 labels = df['label'].values.tolist()
-#path = '/home/mariahabib/Healthy/H26/01SAMOHL/4PK1A.wav'
+#path = '4PK1A.wav'
 
 
 
@@ -229,7 +229,7 @@ columns = ['path', 'label'] + cols
 df_lst.columns = columns
 
 
-df_lst.to_csv('/home/mariahabib/data/SVD/svd_handcrafted_data.tsv', sep='\t', index=False)
+df_lst.to_csv('svd_handcrafted_data.tsv', sep='\t', index=False)
 
 
 
